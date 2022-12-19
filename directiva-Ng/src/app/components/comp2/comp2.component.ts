@@ -12,6 +12,10 @@ export class Comp2Component implements OnInit {
   resultado:any
   mensaje: any
   nombre: any
+  correo:any
+  contraseña:any
+  confirmar:any
+  telefono:any
   ngOnInit(): void {
     this.recuperar()
   }
@@ -19,6 +23,10 @@ export class Comp2Component implements OnInit {
     this.resultado = localStorage.getItem ('valor_total');
     this.mensaje = localStorage.getItem ('mensaje');
     this.nombre = localStorage.getItem ('nombre');
+    this.correo= localStorage.getItem('correo')
+    this.contraseña= localStorage.getItem('contraseña')
+    this.confirmar= localStorage.getItem('confir' )
+    this.telefono= localStorage.getItem('telefono')
   }
 
 }
