@@ -10,29 +10,25 @@
 </ul> -->
 <h2>Create new account</h2>
 <div>
-<input type="text" name="nombre" placeholder="Full name" [(ngModel)]="Nombre">
+<input type="text" placeholder="Full name" [(ngModel)]="nombre"/>
 </div>
 <br>
 <div>
-<input type="email" name="email" placeholder="Email" [(ngModel)]="correo">
+<input type="email"  placeholder="Email" [(ngModel)]="correo"/>
 </div>
 <br>
 <div>
-<input type="password" name="contra" placeholder="Password" [(ngModel)]="contrasena">
+<input type="password" placeholder="Password" [(ngModel)]="contrasena"/>
 </div>
 <br>
 <div>
-<input type="password" name="contra2" placeholder="Confirm Password" [(ngModel)]="confirmarcontra">
+<input type="password" placeholder="Confirm Password" [(ngModel)]="confirmar"/>
 </div>
 <br>
 <div>
-<input type="text" name="telefono" placeholder="Phone number" [(ngModel)]="telefono">
+<input type="text"  placeholder="Phone number" [(ngModel)]="telefono"/>
 </div>
 <br>
 <div>
+    
 <button (click)="Pagina2()">Registrarse</button>
-</div>
-<button (click)="nav()">Pagina 2</button>
-<br><br>
-<button (click)="almacenar()">Almacenar</button>
-<button (click)="recuperar()">Recuperar</button>

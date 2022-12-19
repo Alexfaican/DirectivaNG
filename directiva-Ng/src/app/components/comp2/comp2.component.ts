@@ -23,10 +23,10 @@ export class Comp2Component implements OnInit {
     this.resultado = localStorage.getItem ('valor_total');
     this.mensaje = localStorage.getItem ('mensaje');
     this.nombre = localStorage.getItem ('nombre');
-    this.correo= localStorage.getItem('correo')
-    this.contraseña= localStorage.getItem('contraseña')
-    this.confirmar= localStorage.getItem('confir' )
-    this.telefono= localStorage.getItem('telefono')
+    this.correo= localStorage.getItem('correo');
+    this.contraseña= localStorage.getItem('contrasena');
+    this.confirmar= localStorage.getItem('confirmar' );
+    this.telefono= localStorage.getItem('telefono');
   }
 
 }

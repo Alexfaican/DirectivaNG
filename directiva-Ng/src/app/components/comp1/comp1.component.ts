@@ -9,15 +9,15 @@ import { Route , Router } from '@angular/router';
 export class Comp1Component implements OnInit {
   constructor(private nav:Router) { }
   numero:any = 0;
-  nombre:any;
-  correo:Text
-  contrasena:Text
-  confirmar:Text
-  telefono:number
+  nombre:string
+  correo:string
+  contrasena:string
+  confirmar:string
+  telefono:string
   sueldos:number[]=[1700,1600,1900];
   ngOnInit(): void {
     this.numero= 0;
-    this.almacenamiento()
+
   }
   almacenamiento(){
     localStorage.setItem('valor_total', this.numero)
@@ -30,6 +30,7 @@ export class Comp1Component implements OnInit {
   }
   Pagina2(){
     this.nav.navigate(['web2'])
+    this.almacenamiento()
   }
 }
 
