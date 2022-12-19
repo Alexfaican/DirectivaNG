@@ -11,11 +11,11 @@ export class Comp2Component implements OnInit {
   constructor(private nav:Router) { }
   resultado:any
   mensaje: any
-  nombre: any
-  correo:any
-  contraseña:any
-  confirmar:any
-  telefono:any
+  nombre: string
+  correo:string
+  contrasena:string
+  confirmar:string
+  telefono:string
   ngOnInit(): void {
     this.recuperar()
   }
@@ -24,8 +24,8 @@ export class Comp2Component implements OnInit {
     this.mensaje = localStorage.getItem ('mensaje');
     this.nombre = localStorage.getItem ('nombre');
     this.correo= localStorage.getItem('correo');
-    this.contraseña= localStorage.getItem('contrasena');
-    this.confirmar= localStorage.getItem('confirmar' );
+    this.contrasena= localStorage.getItem('contrasena');
+    this.confirmar= localStorage.getItem('confirmar');
     this.telefono= localStorage.getItem('telefono');
   }
 

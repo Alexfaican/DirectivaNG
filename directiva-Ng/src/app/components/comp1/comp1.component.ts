@@ -17,15 +17,15 @@ export class Comp1Component implements OnInit {
   sueldos:number[]=[1700,1600,1900];
   ngOnInit(): void {
     this.numero= 0;
-
+    localStorage.clear();
   }
   almacenamiento(){
-    localStorage.setItem('valor_total', this.numero)
-    localStorage.setItem('mensaje',"hola")
+    //localStorage.setItem('valor_total', this.numero)//
+    //localStorage.setItem('mensaje',"hola")//
     localStorage.setItem('nombre',this.nombre.toString())
-    localStorage.setItem('email',this.correo.toString())
-    localStorage.setItem('password',this.contrasena.toString())
-    localStorage.setItem('password',this.confirmar.toString())
+    localStorage.setItem('correo',this.correo.toString())
+    localStorage.setItem('contrasena',this.contrasena.toString())
+    localStorage.setItem('confirmar',this.confirmar.toString())
     localStorage.setItem('telefono',this.telefono.toString())
   }
   Pagina2(){
